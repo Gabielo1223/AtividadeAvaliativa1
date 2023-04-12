@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+</head>
+<body bgcolor="#d1cbc0">
+
+	<h1>Formulario - Cadastro de Funcionario</h1>
+	<h3>Aula 18/03/2023 - Formulario de cadastro N°1 </h3>
+
+	<form> 
+
+		<label for="nome">Nome:</label><br>
+		<input type="text" size="50" maxlength="50" minlength="5" required name="nome" id="nome" placeholder="Digite o seu nome">
+
+		<br><br>
+
+		<label for="Idade">Idade:</label><br>
+		<input type="Number" size="25" name="idade" id="idade" min="18" max="65" placeholder="Idade">
+
+		<br><br>
+
+		<label for="Idade">Cargo:</label><br>
+		<input type="text" size="25" name="cargo" id="cargo" placeholder="Digite seu cargo/Profissão">
+
+		<br><br>
+
+		<label for="senha">Senha:</label><br>
+		<input type="password" size="25" name="senha" id="senha" placeholder="Digite sua senha" maxlength="4" minlength="4">
+
+		<br><br>
+
+		<label for="sexo">Sexo:</label><br>
+		M<input type="radio" name="sexo" id="sexo" value="Masculino">
+		F<input type="radio" name="sexo" id="sexo" value="Feminino">
+
+		<br><br>
+
+		<label for="disp">Disponibilidade</label><br>
+		<input type="checkbox" name="Manha" id="Manha"> Manhã
+		<input type="checkbox" name="Tarde" id="Tarde"> Tarde
+		<input type="checkbox" name="Noite" id="Noite"> Noite
+
+
+		<br><br>
+
+		<label for="cor">Cor do uniforme</label><br>
+		<input type="color" name="corUniforme" id="corUniforme">
+
+		<br><br>
+
+		<fieldset>
+			<legend>Datas</legend>
+
+			<label for="dataNascimento">Data Nascimento:</label><br>
+			<input type="date" name="dataNascimento" id="dataNascimento" required>
+
+			<br><br>
+
+			Data e Hora do Cadastro:<br>
+			<input type="datatime-local" name="dataHoraNascimento" id="dataHoraNascimento">
+
+			<br><br>
+
+			Horário de entrada:<br>
+			<input type="time" name="horarioEntrada" id="horarioEntrada">
+
+			<br><br>
+
+			Mês do encerramento do contrato:<br>
+			<input type="month" name="mesEncerramento">
+
+			<br><br>
+
+			Semana final de aula:<br>
+			<input type="week" name="semanaFinal">
+
+			<br><br>
+
+		</fieldset>
+
+		Email:<br>
+		<input type="email" placeholder="e-mail">
+
+		<br><br>
+
+		N° de Filhos:<br>
+		<input type="Number" placeholder="n° de Filhos" min="1" max="10" step="2">
+
+		<br><br>
+
+		Capacitação:<br>
+		<input type="range" min="1" max="10">
+
+		<br><br>
+
+		Buscar:<br>
+        <input type="search" placeholder="termo da pesquisa">
+
+        <br><br>
+
+        Site:<br>
+        <input type=“url”>
+
+        <br><br>
+
+		<input type="submit" value="Enviar👍">
+		<input type="button" value="Alerta✋" onclick="alert('Siga as regras de preencimento');">
+		<input type="reset" value="Limpar👎">
+
+	</form>
+</body>
+</html>
+
+<!-- readlonly - não permite alterar o valor do campo mas seu valor é enviado para o backend. -->
+<!-- disable   - desabilita o campo e seu valor não é enviado para o backend.                 -->
+<!-- checked   - deixa pré selecionado                                                        -->
